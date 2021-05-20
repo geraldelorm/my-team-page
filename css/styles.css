@@ -16,6 +16,7 @@ body {
   margin: 3rem 1rem 1rem 1rem;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  width: 100vw;
 }
 
 header h1 {
@@ -46,16 +47,17 @@ header div p {
 }
 .photo {
   width: 140px;
-  height: 220px;
+  height: 200px;
 }
 .role {
   font-size: 0.7rem;
-  position: absolute;
-  top: 6%;
-  right: 0%;
+  position: relative;
+  bottom: 40%;
+  left: 25%;
   transform: rotate(90deg);
 }
 .name {
+  margin-top: -1rem;
   font-weight: bold;
 }
 
@@ -102,6 +104,13 @@ footer p a {
   .photo {
     width: 220px;
     height: 320px;
+  }
+  .role {
+    font-size: 0.8rem;
+    position: relative;
+    bottom: 53%;
+    left: 41%;
+    transform: rotate(90deg);
   }
   footer p {
     font-size: 1rem;
