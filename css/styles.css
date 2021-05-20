@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+}
+
+.container {
+  height: 100vh;
+  margin: 3rem 1rem 1rem 1rem;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+header div h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+header div p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  max-width: 20rem;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: 1rem auto;
+}
+.profile {
+  width: 200px;
+  height: 300px;
+  position: relative;
+}
+.photo {
+  width: 140px;
+  height: 220px;
+}
+.role {
+  font-size: 0.7rem;
+  position: absolute;
+  top: 6%;
+  right: 0%;
+  transform: rotate(90deg);
+}
+.name {
+  font-weight: bold;
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.7rem;
+  color: rgb(77, 76, 76);
+}
+
+footer p a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+@media (min-width: 800px) {
+  .container {
+    margin: 4rem auto 1rem auto;
+    max-width: 800px;
+  }
+
+  header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    width: 50%;
+  }
+  header div {
+    width: 50%;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 5rem auto;
+  }
+  .profile {
+    width: 250px;
+    height: 400px;
+  }
+  .photo {
+    width: 220px;
+    height: 320px;
+  }
+  footer p {
+    font-size: 1rem;
+  }
+}
