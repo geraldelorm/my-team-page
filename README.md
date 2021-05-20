@@ -32,7 +32,7 @@
 
 ## Overview
 
-![screenshot](https://github.com/geraldelorm/404-not-found/assets/img/blob/main/screen.PNG)
+![screenshot](https://github.com/geraldelorm/my-team-page/blob/main/assets/img/screen.PNG)
 
 ### Built With
 
